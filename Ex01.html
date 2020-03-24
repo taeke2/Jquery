@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex01</title>
+<!-- 인터넷에서 jqeury 다운로드 입력 -> 다운로드 들어가서 첫번째꺼 눌러서 다른이름으로 저장 -> 프로젝트에 넣기 -->
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> : 경로로 설정해줘도됨 -->
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function() { // document 준비상태이다. 함수안에 이루어지는 동작을 준비하겠다.
+		$(".button").click(function() {
+			$("p").hide();
+		});
+	});
+
+	$().ready(function() { // document 생략 가능
+		$(".button").click(function() {
+			$("p").hide();
+		});
+	});
+
+	$(function() { // document, ready 생략 가능
+		$("button").click(function() {
+			$("p").hide();
+		});
+		$("button.show").click(function() {
+			$("p").show();
+		});
+	});
+	
+	/*
+	function test(){
+		$("p").hide();
+	}
+	*/
+	
+</script>
+</head>
+<body>
+	<p>메세지 : 제이쿼리를 공부하고 있습니다.</p>
+	<button>메세지 삭제</button>
+	<button class="show">메세지 보내기</button>
+</body>
+</html>
