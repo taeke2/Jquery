@@ -2,24 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Ex05</title>
 <script src="jquery-3.4.1.min.js"></script>
 <script>
 	$(function(){
 		$("button.b1").click(function(){
-			$("img").animate({
-				width: '100px'
-			});
+			$("img").animate({ margin: "0px", left: '100px', height: '100px', width: '100px' });
 		});
 		$("button.b2").click(function(){
-			$("img").animate({
-				width: '200px'
-			});
+			$("img").animate({ width: '200px' });
 		});
 		$("button.b3").click(function(){
-			$("img").animate({
-				width: '500px'
-			});
+			$("img").animate({ margin: '100px', left:"500px", height:"500px", width: '500px' });
 		});
 	})
 </script>
@@ -29,12 +23,10 @@
 </style>
 </head>
 <body>
-	<div class="css_pic">
-		버튼을 누르면 그림의 크기가 바뀝니다.<p/>
-		<button class="b1">가로 100픽셀</button>
-		<button class="b2">가로 200픽셀</button>
-		<button class="b3">가로 300픽셀</button>
-		<img name="pic1" src="resources/images/car01.png"/>
-	</div>
+	버튼을 누르면 그림의 크기가 바뀝니다.<p/>
+	<button class="b1">가로 100픽셀</button>
+	<button class="b2">가로 200픽셀</button>
+	<button class="b3">가로 300픽셀</button>
+	<img name="pic1" src="resources/images/car01.png"/>
 </body>
 </html>
